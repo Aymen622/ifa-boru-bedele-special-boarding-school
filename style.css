@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.header{
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url(images/25.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+  nav{
+  display: block;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .header nav img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+.nav-links{
+     flex:1 ;
+     text-align: right;
+}
+.nav-links ul li{
+   list-style: none;
+   display: inline-block;
+   padding: 8px 12px;
+   position: relative;
+}
+    .nav-links ul li a{
+    color: white;
+    text-decoration: wavy;
+    font-size: 20px;}
+   .nav-links ul li::after{
+      content: '';
+      width: 0%;
+      height: 2PX;
+      background:darkred;
+      display: block;
+      margin: auto;
+      transition:0.5s ;
+    }
+    .nav-links ul li:hover::after{
+          width: 100%;
+    }
+    .text_box{
+        width: 90%;
+        color:white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    } 
+    .text_box p{
+      color: ghostwhite;
+      text-align: center;
+    }
+
+    .hero-btn{
+     display: inline-block;
+     text-decoration: none;
+     color: white;
+     border: 1px solid white;
+     padding: 12px 34px;
+     font-size: 13px;
+     background: transparent;
+     position: absolute;
+     cursor: pointer;
+    }
+      .hero-btnred-btn{
+        color:brown;
+       display: inline-block;
+       cursor: pointer;
+       background: transparent;
+       border: 1px solid ghostwhite;
+       padding: 12px 34px;
+      }
+      .hero-btnred-btn:hover{
+        border: 1px solid whitesmoke ;
+        background: chartreuse;
+        transition: 5s;
+       }
+    .hero-btn:hover{
+     border: 1px solid red;
+     background: red;
+     transition: 5s;
+    }
+     @media(max-width:700px){
+      .text-box h1{
+         font-size: 20px;
+      }  
+      .nav-links ul li{
+        display: block;
+      }
+      .nav-links{
+       position: absolute;
+       background: transparent;
+       height: 100vh;
+       width: 200px;
+       top: 0;
+       right: 0;
+       text-align: left;
+       z-index: 2;
+      }
+
+  }
+   .Course{
+     margin: auto;
+     text-align: center;
+     padding-top: 100px;
+   }
+   h1{
+    font-size: 36px;
+    font-weight: 600;
+   }
+  p{
+   color:grey;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 22px;
+   padding: 10px;
+  }
+  .row{
+   margin-top: 5%;
+   display: flex;
+   justify-content: space-between;
+  }
+   .course-col{
+    flex-basis: 31%;
+    background: ghostwhite;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0,5;
+   }
+   h3{
+
+
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+   }
+   .course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    }
+    @media(max-width : 700px){
+     .row{
+        flex-direction: column;
+     }
+
+    }
+    .campus{
+     width: 80%;
+     margin: auto;
+      text-align: center;
+      padding-top: 50px;
+    }
+     .campus-col{
+      flex-basis: 32%;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+     }
+      .campus-col img{
+        width: 100%;
+        display: block;
+      }
+      .layer{
+        background:transparent;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+      }
+      .layer:hover{
+        background:gainsboro ;
+      }
+      .layer h3{
+      width: 100%;
+      font-weight: 500;
+      color: white;
+      font-size: 26px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      opacity: 0;
+      transition: 0.5s;
+      }
+      .layer:hover h3{
+        bottom: 49%;
+        opacity: 1;
+      }
+      .Facilities{
+        width: 100%; 
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+      }
+      .Facilities-col{
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+          text-align: left;}
+      .Facilities-col img{
+       width:100%;
+       border-radius: 10px;
+       margin: 2px;
+      }
+      .cta{
+        margin: 100px auto;
+        width: 80%;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url(images/25.jpg);
+        background-position: center;
+        background-size: cover;border-radius: 10px;
+        text-align: center;
+        padding: 100px 0;S }
+      .cta h1{
+      color: white;
+      margin-bottom: 40px;
+      padding: 0;
+      } 
+      @media(max-width:700px){
+        .cta h1{
+          font-size: 24px;
+        }
+      } 
+      .footer{
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .footer h3{
+        margin-bottom: 25px ;
+       margin-top: 20px ;   
+       font-weight:600 ;     
+      }
+       .icon img{
+        width: 3%; 
+        height: 3%;
+      position:relative; 
+      
+        }
+       .sub-header{
+        height: 60vh;
+        width: 100%;
+        background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url(images/25.jpg) ;
+         background-position: center;
+         background-size: cover;
+         text-align: center;
+         color: white;
+       }
+       .sub-header h1{
+        margin-top: 100px;
+       }
+       .about us{
+        width: 100%;
+        margin:auto;
+        padding-top: 80px;
+        padding-bottom: 50px;
+       }
+       .about-col{
+        flex-basis: 48%;
+        padding: 30px 2px;
+
+       }
+       .about-col img{
+        width: 100%;
+        height: 100%;
+       }
+        .about-col h1{
+          padding-top: 0;
+        }
+    .about-col p{
+      padding: 15px 0 25px;
+      color: darkslategray;
+    }
+    .location{
+      width: 60%;
+      padding: 80px 0;
+      margin: auto;
+    }
+    .location img{
+    width: 100%;  
+  }
+   .contact-col input,.contcact-col textarea{
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid lavenderblush;
+    box-sizing: border-box;
+   }
+     
